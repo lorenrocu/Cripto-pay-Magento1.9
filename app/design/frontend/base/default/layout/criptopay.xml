@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+<!--
+Criptopay Failure Response Review
+-->
+<criptopay_standard_failure>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="criptopay/standard_failure" name="criptopay_standard_failure" template="criptopay/standard/failure.phtml">
+        </block>
+    </reference>
+</criptopay_standard_failure>
+
+<criptopay_standard_success>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="criptopay/standard_success" name="criptopay_standard_success" template="criptopay/standard/success.phtml">
+        </block>
+    </reference>
+</criptopay_standard_success>
+
+</layout>

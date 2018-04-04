@@ -1,0 +1,12 @@
+<config>
+    <modules>
+              <Mage_Criptopay>
+                  <active>true</active>
+                  <codePool>local</codePool>
+                  <depends>
+                      <Mage_Payment />
+                  </depends>
+                   <version>1.0.0</version>
+               </Mage_Criptopay>
+           </modules>
+</config>

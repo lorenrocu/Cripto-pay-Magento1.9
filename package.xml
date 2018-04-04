@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mage_Criptopay</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GNU</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Installation package for the payment gateway with API from crypto-pay.com</summary>
+    <description>Development of payment gateway for magento 1.9 with the api of crypto-pay.com</description>
+    <notes>Development of payment gateway for magento 1.9 with the api of crypto-pay.com</notes>
+    <authors><author><name>Lorenzo Romero Cubas</name><user>megapattern</user><email>lorenrocu@gmail.com</email></author></authors>
+    <date>2018-03-01</date>
+    <time>12:42:50</time>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+<contents>
+<target name="mage">
+<dir name="app">
+ <dir name="code"><dir name="local"><dir name="Mage"><dir name="Criptopay">
+	<dir name="Block">
+		<dir name="Standard">
+			<file name="Failure.php"/>
+			<file name="Form.php"/>
+			<file name="Info.php"/>
+			<file name="Redirect.php"/>
+			<file name="Success.php"/>												
+		</dir>
+	</dir>
+	<dir name="controllers"><file name="StandardController.php"/></dir>
+	<dir name="etc"><file name="config.xml"/><file name="system.xml"/></dir>
+	<dir name="Helper"><file name="Data.php"/></dir>	
+	<dir name="Model">
+		<dir name="Api"><file name="Debug.php"/></dir>	
+		<dir name="Mysql4"><dir name="Api"><dir name="Debug"><file name="Collection.php"/></dir><file name="Debug.php"/></dir><file name="Setup.php"/></dir>	
+		<dir name="Source"><file name="ModeAction.php"/><file name="PaymentAction.php"/></dir>		
+		<file name="Config.php"/>
+		<file name="Session.php"/>
+		<file name="Standard.php"/>
+	</dir>
+	<dir name="sql"><dir name="criptopay_setup"><file name="mysql4-install-1.0.0.php"/></dir></dir>			
+ </dir></dir></dir></dir>
+ 
+ 	<dir name="design"><dir name="frontend"><dir name="base"><dir name="default">
+		<dir name="layout"><file name="criptopay.xml"/></dir>
+		<dir name="template"><dir name="criptopay"><dir name="standard"><file name="failure.phtml"/><file name="form.phtml"/><file name="success.phtml"/></dir></dir></dir>		
+	</dir></dir></dir></dir>
+	<dir name="etc"><dir name="modules"><file name="Mage_Criptopay.xml"/></dir></dir>					
+	<dir name="locale"><dir name="en_US"><file name="Mage_Criptopay.csv"/></dir></dir>						
+	
+</dir>	
+
+</target>
+   </contents>	
+</package>
